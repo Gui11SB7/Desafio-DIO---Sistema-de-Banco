@@ -43,3 +43,19 @@ while True:
             extrato += f"Saque: R$ {valor:.2f}\n"
             numero_saques += 1
             print(f"Saque de R$ {valor:.2f} realizado com sucesso!")
+
+    elif opcao == "3":
+        print("\n================ EXTRATO ================\n")
+        if not extrato:
+            print("Nenhuma transação realizada.")
+        else:
+            print(extrato)
+        print(f"\nSaldo atual: R$ {saldo:.2f}")
+        print("==========================================\n")
+
+    elif opcao == "4":
+        print("Saindo do sistema...")
+        break
+
+    else:
+        print("Opção inválida. Por favor, escolha uma opção válida.")
